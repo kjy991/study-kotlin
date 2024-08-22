@@ -6,9 +6,14 @@ fun main(args: Array<String>) {
     println("sum : $sum")
     println("Hello World!")
 
-
     println("Hello World! ${if (number > 10) number else "number is null"}")
     println("sum World! ${sum(3,5)}")
+
+    val person = Person("yk", 34, false)
+    println("person = $person")
+
+
+
 }
 
 fun sum(a: Int, b: Int): Int = a + b

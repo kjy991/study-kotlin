@@ -18,7 +18,7 @@ class Rectangle(val height: Int, val width: Int) {
 
 val persons = listOf(
     Person("a", 1, true),
-    Person("b", 2, true),
+    Person("aba", 2, true),
     Person("c", 3, true),
     Person("d", 4, true),
     Person("e", 5, true),

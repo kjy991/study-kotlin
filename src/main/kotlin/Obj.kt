@@ -30,6 +30,7 @@ fun main() {
     println(NumberUtils.sum(1, 2))
     println(NumberUtils.multiply(2, 2))
 
+
     val ofDefaultAge = Child.ofDefaultAge("sub", "family")
     println(ofDefaultAge.age)
     println(ofDefaultAge)

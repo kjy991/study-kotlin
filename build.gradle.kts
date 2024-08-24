@@ -1,5 +1,7 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "1.8.10"
 }
 
 group = "org.example"
@@ -16,6 +18,8 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
-kotlin {
-    jvmToolchain(17)
+
+// Kotlin 컴파일러의 jvmTarget을 17로 설정
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "17"
 }
